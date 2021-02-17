@@ -27,7 +27,4 @@ class MyData:
             conn.commit() # Submits that data to the DB server/File/Table
         else:
             print("Fail")
-Start = MyData()
-Start.GenKey("Nolan", "Taft")
-
 #NOTE: The '(?, ?, ?, ?)' in line 26 allows us to input variables into the SQLITE3 table, '{}' format doesnt work.
