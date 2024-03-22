@@ -1,8 +1,9 @@
-import sqlite3, random, time
+import sqlite3, time
+import secrets
 
 
 def gen_key():  # generate random 6 number key
-    return random.randint(100000, 999999)
+    return secrets.SystemRandom().randint(100000, 999999)
 
 
 def tme():  # Generate local time and return it
